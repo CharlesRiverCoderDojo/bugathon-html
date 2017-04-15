@@ -10,49 +10,169 @@
   </head>
 
   <body>
-    <h1><span class="uppercase">This is your mission, ninja,</span></h1>
+    <h1>This is your mission, ninja,</h1>
     <h2>should you choose to accept it.</h2>
     <div class="instruction-overview">
-      <h3>Look <em>very carefully</em> through this HTML file and the attached CSS file...</h3>
-      <p>Throughout both files, there are <span class="bold uppercase">lots</span> of mistakes.  In fact,
-      there are 10 mistakes that have been made in each file. It is up to you to find and correct all of
-      the bugs in the code so that it works properly.</p>
+
+      <h3>Look <em>very carefully</em> through this HTML file</h3>
+
+      <p>Throughout the file, there are <b>lots</b> of mistakes.
+      It is up to you to find and correct all of the bugs in the code so that it works properly.</p>
+
+      <p>This isn't meant to be easy, but it will help you build your debugging skills.</p>
+
+      <h4>So, what's debugging, and why is it important?</h4>
+
+      <p>Debugging is the process of looking through code very carefully to find
+        where the code isn't written correctly. With HTML code, an example of
+        an error that you may look for is that all tags that need to be closed
+        are actually closed. More of types of errors later... </p>
+
+      <p>With programming, this skill comes in handy on a regular basis. As you
+        understand the errors in your code more, you will improve on your programming
+        skills, have a deep understanding of how to properly write code, and be able
+        to write code faster.
+      </p>
+
+      <p>For this exercise, follow your instinct, and if something just "feels"
+        wrong in the code, look into it a bit deeper. Understand why the code is
+        written in a certain way and determine if there is a problem with it.
+        Importantly, you should try to understand <em>WHY</em> there could be a
+        problem with the code.  Use the internet to find answers to the questions
+        that will come up during this exercise.  One helpful site is
+        <a href="https://www.w3schools.com/" target="_blank">W3Schools.</a> You can
+        also check out <a href="http://stackoverflow.com/" target="_blank">StackOverflow</a>
+        as well.</p>
+
+      <div class="instruction-guidelines">
+        <h3>Here are some tips on looking for bugs:</h3>
+        <ul>
+          <li><i class="fa fa-bell-o"></i>&nbsp;&nbsp;&nbsp; Pay close attention to HTML tags that must be closed</li>
+          <li><i class="fa fa-binoculars" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; For self-closing HTML tags, make sure the syntax is correct</li>
+          <li><i class="fa fa-anchor" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Ensure that an HTML element is being implemented correctly (hint, hint the list item tag)</li>
+          <li><i class="fa fa-hand-pointer-o" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; With styling, make sure that an element is being selected as a class or an id</li>
+          <li><i class="fa fa-check-square" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Check that styling of an element isn't getting overwritten by an element lower in the cascade</li>
+          <li><i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Open up your web inspector (option + command + i on a Mac, and control + shift + i on a PC) to directly update CSS while in the browser</li>
+          <li><i class="fa fa-cogs" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; If you're interested in learning about Font Awesome, check out this link here: <a href="http://fontawesome.io/examples/" target="_blank">Font Awesome Examples</a></li>
+        </ul>
+      </div>
+
+      <p>So, now that you understand what debugging is, let's get started! Below, I'll
+        have lots of different errors. Lots of them are repeats. Good luck in your
+        quest to fix this bad code!</p>
+
       <br />
-      <p>This isn't meant to be easy, but it will help you build your debugging skills. So, what's debugging, and why is it important?
-      Well, it's very rare that all of the code you create will be free of errors, or that
-      code that you work with as a developer will be free of errors.  That's why it is important
-      to train yourself to recognize errors in code and understand why that block of
-      code needs to be changed. That's the essence of debugging- find an error in the
-      code that you're working with and fix it.</p>
-      <br />
-      <p>For this exercise, follow your instinct, and if something
-      just "feels" wrong in the code, figure out why. Understand why the code is written in a certain way
-      and fix it if you find a problem with it. Try turning off or disabling any linter packages
-      that may be enabled in your text editor of choice. If you run into questions or are
-      having trouble, you should search the internet for answers to your questions. One
-      helpful site is <a href="https://www.w3schools.com/" target="_blank">W3Schools.</a>
-      You can also check out <a href="http://stackoverflow.com/" target="_blank">StackOverflow</a> as well.</p>
-      <br>
-      <p>Below are some images that show what the site is supposed to look like:</p>
+
+    </div>
+
+    <div class="error-section">
+      <h4>Below are some img tags that you'll need to fix</h4>
       <div class="image-wrapper">
         <img id="img1" src="img/img1.png" alt="Image 1 of Website">
         <img id="img2" src="img/img2.png" alt="Image 2 of Website">
         <img id="img3" src="img/img3.png" alt="Image 3 of Website">
       </div>
+
+      <br />
+
+      <h4>Here are some text styling tags that you'll need to fix</h4>
+      <p><i><u><b>Cupcake ipsum dolor sit.</b></u></i> Amet fruitcake sweet roll donut <b>biscuit
+        oat cake</b> toffee. <s>Liquorice</s> sugar plum pudding <em>carrot cake</em>
+        liquorice oat cake<b> tootsie roll tootsie roll</b> donut. Apple pie
+        sweet roll topping <i><u>marzipan cake</u></i> brownie brownie tootsie roll muffin.
+        Danish marshmallow tart <em>soufflé</em>. <b>Lemon drops</b> <s>liquorice</s>
+        <u>chocolate cake</u>. Brownie fruitcake jelly-o tart toffee <i>gummies</i>.
+        Jelly beans cotton candy wafer biscuit wafer <em>chocolate cake</em> <em><u>icing</u></em>.
+
+      <br />
+
+      <h4>Here are some lists that you'll need to correct</h4>
+
+      <ul type="square">
+        <li>I am</li>
+        <li>a</li>
+        <li>square</li>
+        <li>unordered list</li>
+      </ul>
+
+      <ol start=4>
+        <li>Wait</li>
+        <li>we're starting</li>
+        <li>from four??</li>
+        <li>I can't</li>
+        <li>believe it!</li>
+      </ol>
+
+      <ol>
+        <li>First</li>
+        <li>Second
+          <ul>
+            <li>Thing one</li>
+            <li>Thing two</li>
+            <li>Thing three</li>
+          </ul>
+        </li>
+        <li>Third
+          <ul>
+            <li>Only one thing...
+              <ul>
+                <li>But</li>
+                <li>it's</li>
+                <li>complicated!</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ol>
+
+      <h4>Here is a table (or three) that you'll need to un-break!</h4>
+
+      <table border="1" border-collapse="collapse">
+        <tr>
+          <th border="1">Header 1</th>
+          <th border="1">Header 2</th>
+          <th border="1">Header 3</th>
+        </tr>
+        <tr>
+          <td>One piece of information</td>
+          <td>One piece of information</td>
+          <td>One piece of information</td>
+        </tr>
+        <tr>
+          <td>Here's something else</td>
+          <td>Here's something else</td>
+          <td>Here's something else</td>
+        </tr>
+        <tr>
+          <td>
+            <table border="1">
+              <tr>
+                <th>And now</th>
+                <th>it's complicated!</th>
+              </tr>
+              <tr>
+                <td>These</td>
+                <td>are</td>
+              </tr>
+              <tr>
+                <td>nested</td>
+                <td>tables</td>
+              </tr>
+            </table>
+          </td>
+          <td>Very</td>
+          <td>Complicated</td>
+        </tr>
+        <tr>
+          <td>And one last row</td>
+          <td>For old time's sake</td>
+          <td>And for more practice</td>
+        </tr>
+      </table>
+
     </div>
 
-    <div class="instruction-guidelines">
-      <h3>Here are some tips on looking for bugs:</h3>
-      <ul>
-        <li><i class="fa fa-bell-o"></i>&nbsp;&nbsp;&nbsp; Pay close attention to HTML tags that must be closed</li>
-        <li><i class="fa fa-binoculars" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; For self-closing HTML tags, make sure the syntax is correct</li>
-        <li><i class="fa fa-anchor" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Ensure that an HTML element is being implemented correctly (hint, hint the list item tag)</li>
-        <li><i class="fa fa-hand-pointer-o" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; With styling, make sure that an element is being selected as a class or an id</li>
-        <li><i class="fa fa-check-square" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Check that styling of an element isn't getting overwritten by an element lower in the cascade</li>
-        <li><i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Open up your web inspector (option + command + i on a Mac, and control + shift + i on a PC) to directly update CSS while in the browser</li>
-        <li><i class="fa fa-cogs" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; If you're interested in learning about Font Awesome, check out this link here: <a href="http://fontawesome.io/examples/" target="_blank">Font Awesome Examples</a></li>
-      </ul>
-    </div>
+
 
     <div class="gif">
       <iframe src="https://giphy.com/gifs/bXBU98jCBvMNa/html5" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
@@ -65,7 +185,7 @@
       time the errors are in the script.js file!</p>
     </div>
 
-    <!-- <div class="challenge-form">
+    <div class="challenge-form">
       <h3 class="challenge-intro">Hello, ninja.  For your extra challenge,
       you will be learning a bit about algorithms.</h3>
       <h4>So, what <em class="underline">exactly</em> is an alogrithm?</h4>
@@ -122,22 +242,5 @@
        about these a bit in our next meeting!</li>
      </ul>
    </div>
-
-     <div class="form-wrapper">
-        <h4>Name Reversal Form</h4>
-        <div class="form-input">
-          Please enter your name here: <input type="text" id="name-input">
-          <button type="submit">Submit</button>
-        </div>
-        <br />
-        <div class="message-header" hidden>Here's one way to reverse your name:</div>
-        <div class="message" id="message1"></div>
-        <br>
-        <div class="message-header" hidden>Here's a second way to reverse your name:</div>
-        <div class="message" id="message2"></div>
-        <div class="message" id="thank-you"></div>
-    </div>
-
-    <script src="js/script.js"></script> -->
   </body>
 </html>
