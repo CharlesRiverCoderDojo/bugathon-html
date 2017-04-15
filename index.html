@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CoderDojo Challenge</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300,400|Gloria+Hallelujah|Indie+Flower|Montserrat|Pangolin" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <h1><span class="uppercase">This is your mission, ninja,</span></h1>
+    <h2>should you choose to accept it.</h2>
+    <div class="instruction-overview">
+      <h3>Look <em>very carefully</em> through this HTML file and the attached CSS file...</h3>
+      <p>Throughout both files, there are <span class="bold uppercase">lots</span> of mistakes.  In fact,
+      there are 10 mistakes that have been made in each file. It is up to you to find and correct all of
+      the bugs in the code so that it works properly.</p>
+      <br />
+      <p>This isn't meant to be easy, but it will help you build your debugging skills. So, what's debugging, and why is it important?
+      Well, it's very rare that all of the code you create will be free of errors, or that
+      code that you work with as a developer will be free of errors.  That's why it is important
+      to train yourself to recognize errors in code and understand why that block of
+      code needs to be changed. That's the essence of debugging- find an error in the
+      code that you're working with and fix it.</p>
+      <br />
+      <p>For this exercise, follow your instinct, and if something
+      just "feels" wrong in the code, figure out why. Understand why the code is written in a certain way
+      and fix it if you find a problem with it. Try turning off or disabling any linter packages
+      that may be enabled in your text editor of choice. If you run into questions or are
+      having trouble, you should search the internet for answers to your questions. One
+      helpful site is <a href="https://www.w3schools.com/" target="_blank">W3Schools.</a>
+      You can also check out <a href="http://stackoverflow.com/" target="_blank">StackOverflow</a> as well.</p>
+      <br>
+      <p>Below are some images that show what the site is supposed to look like:</p>
+      <div class="image-wrapper">
+        <img id="img1" src="img/img1.png" alt="Image 1 of Website">
+        <img id="img2" src="img/img2.png" alt="Image 2 of Website">
+        <img id="img3" src="img/img3.png" alt="Image 3 of Website">
+      </div>
+    </div>
+
+    <div class="instruction-guidelines">
+      <h3>Here are some tips on looking for bugs:</h3>
+      <ul>
+        <li><i class="fa fa-bell-o"></i>&nbsp;&nbsp;&nbsp; Pay close attention to HTML tags that must be closed</li>
+        <li><i class="fa fa-binoculars" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; For self-closing HTML tags, make sure the syntax is correct</li>
+        <li><i class="fa fa-anchor" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Ensure that an HTML element is being implemented correctly (hint, hint the list item tag)</li>
+        <li><i class="fa fa-hand-pointer-o" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; With styling, make sure that an element is being selected as a class or an id</li>
+        <li><i class="fa fa-check-square" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Check that styling of an element isn't getting overwritten by an element lower in the cascade</li>
+        <li><i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Open up your web inspector (option + command + i on a Mac, and control + shift + i on a PC) to directly update CSS while in the browser</li>
+        <li><i class="fa fa-cogs" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; If you're interested in learning about Font Awesome, check out this link here: <a href="http://fontawesome.io/examples/" target="_blank">Font Awesome Examples</a></li>
+      </ul>
+    </div>
+
+    <div class="gif">
+      <iframe src="https://giphy.com/gifs/bXBU98jCBvMNa/html5" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </div>
+
+    <div class="bonus-instructions">
+      <h4>If you are looking for an extra challenge...</h4>
+      <p>Remove the commented code at the bottom of this file. You will have
+      a JavaScript challenge to take on. As with the content and styling, find the bugs, but this
+      time the errors are in the script.js file!</p>
+    </div>
+
+    <!-- <div class="challenge-form">
+      <h3 class="challenge-intro">Hello, ninja.  For your extra challenge,
+      you will be learning a bit about algorithms.</h3>
+      <h4>So, what <em class="underline">exactly</em> is an alogrithm?</h4>
+     <p>To say <span class="uppercase">exactly</span> what Wikipedia says- it's a self-contained sequence of
+     actions to be performed. Huh?? Basically, it's a series of steps that you take to reach a
+     very specific goal. So, don't worry about content or styling in this extra challenge-
+     think about the way your code functions when a user interacts with it.</p>
+     <br />
+     <p><em class="bold underline">Think about it- your life is a series of algorithms.</em></p>
+     <br />
+     <p>For example, you have an algorithm you follow every time
+     you brush your teeth. Go into the bathroom, grab your toothbrush, turn on the water,
+     wet your toothbrush, turn off the water, put toothpaste on your toothbrush,
+     brush those beautiful teeth, etc. It's as easy as that! Well, easy may sometimes be an overstatement...
+     <a href="http://users.iems.northwestern.edu/~jrbirge/html/dholmes/StoProIntro.html" target="_blank">Oy...</a></p>
+     <br />
+     <p>Algorithms can get pretty complicated, but they're not always <em>that</em> complicated. Take a few minutes to think about some of
+     the algorithms that dominate your life. What is your algorithm for having dinner?
+     What is the algorithm you follow just to turn on your computer?</p>
+     <br />
+     <p>Algorithms are <em class="underline">very</em> helpful in programming. Like, do you see
+     the &lsaquo;em&rsaquo; tag and underline class that I'm using to emphasize how helpful they are?? They are the recipes that you can use to create
+     your fantastic programs. They will help you build the foundation of code that you need for your site and make it applicable to many different situations. For
+     example, if Laura and Kate have the same tooth-brushing routine, you can use that
+     one tooth-brushing algorithm to represent that process for both people. A more generic example is that you can use an
+     algorithm to calculate the number of days a person has been alive since their
+     date of birth. So, you would take any one person's date of birth and figure out how many
+     days that person has existed since today's date. Or you can sort a random series of numbers from the
+     smallest to the largest. What would be an interesting algorithm that you could create based on your life?</p>
+     <br />
+     <p>By creating an algorithm, you will save time programming, and
+     your code will be D.R.Y.- Don't Repeat Yourself. If you're interested, look up DRY programming.</p>
+     <br />
+     <p>We'll start you off with a cool JavaScript algorithm.</p>
+     <br />
+     <p><span class="uppercase">Here's the challenge:</span> you are going to have a user enter her or his name
+     into the form below. When the user puts their name into the form, you will have an
+     algorithm that displays their name spelled backwards.</p>
+     <br />
+     <p>What makes this an algorithm? Well, we want the code to do the same
+       thing every time a name/string is entered into the input field. We want
+       consistency when our code responds to the users' input.</p>
+       <br />
+       <p> Here are some things to think about as you're fixing this code:</p>
+     <ul>
+       <li>You need to make sure the user name is saved as a variable</li>
+       <li>Look into jQuery methods (a method is a built-in function) that can manipulate
+       strings</li>
+       <li>Review what 'method chaining' means- putting one method after another- it's very helpful! <a href="https://www.w3schools.com/jquery/jquery_chaining.asp" target="_blank">Look here!</a></li>
+       <li>You will need a method that can cut a word into individual letters <a href="https://www.w3schools.com/jsref/jsref_split.asp" target="_blank"> like here</a></li>
+       <li>Another method that you may need would swap all of the letters from their original place <a href="https://www.w3schools.com/jsref/jsref_reverse.asp" target="_blank">like here</a></li>
+       <li>Another method could put those individual letters back together to create another string <a href="https://www.w3schools.com/jsref/jsref_join.asp" target="_blank">like here</a></li>
+       <li>There are two JavaScript functions here that you can fix. Try the first one, and then go on to the second one if you'd like.  We can chat
+       about these a bit in our next meeting!</li>
+     </ul>
+   </div>
+
+     <div class="form-wrapper">
+        <h4>Name Reversal Form</h4>
+        <div class="form-input">
+          Please enter your name here: <input type="text" id="name-input">
+          <button type="submit">Submit</button>
+        </div>
+        <br />
+        <div class="message-header" hidden>Here's one way to reverse your name:</div>
+        <div class="message" id="message1"></div>
+        <br>
+        <div class="message-header" hidden>Here's a second way to reverse your name:</div>
+        <div class="message" id="message2"></div>
+        <div class="message" id="thank-you"></div>
+    </div>
+
+    <script src="js/script.js"></script> -->
+  </body>
+</html>
